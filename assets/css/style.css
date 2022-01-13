@@ -1,0 +1,163 @@
+/* ================== Common Section =================== */
+.section {
+    position: relative;
+    min-height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.section-bg-overlay.absolute.fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #000000ca;
+}
+.section .container {
+    z-index: 1;
+}
+.bold {
+    font-weight: bold;
+}
+.img-responsive {
+    width: 100%;
+    max-width: 100%;
+}
+.title {
+    text-align: center;
+    padding: 30px 0 50px;
+}
+.title .title__txt {
+    display: inline-block;
+    border-bottom: 3px solid #333333;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 20px 0;
+}
+.section__wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.section__item {
+    display: flex;
+}
+.section__txt {
+    width: 45%;
+    margin-right: 25px;
+    line-height: 1.2;
+}
+.section__img {
+    width: calc(100% - 45% - 25px);
+}
+.section__item .section__txt p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.section__item .section__txt .hot {
+    display: flex;    
+    margin-top: 0;
+}
+.section__item .section__txt .hot span {
+    width: calc(100% - 16px);
+}
+.section__item .section__txt .hot:before{
+    content: "";
+    background: url('../img/icon/fire.svg');
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    display: flex;
+}
+.section__item .section__txt ul li {
+    list-style: disc;
+    margin-left: 25px;
+}
+/* ================== End Common Section =================== */
+/* ================== Section Slide ==================== */
+.section.slide {
+    padding:  0;
+}
+.owl-carousel .owl-item img {
+    object-fit: cover;
+    max-height: 500px;
+}
+.owl-wrap {
+    position: relative;
+}
+.owl-wrap img {
+    opacity: .6;
+}
+.owl-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #0a116c;
+    font-size: 80px;
+    border: 5px solid #222b6a;
+    padding: 30px;
+}
+.owl-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff845f;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #fff;
+}
+button.owl-dot.active {
+    outline: none;
+}
+button.owl-dot:focus {
+    outline: none;
+}
+/* ================== End Section Slide ==================== */
+/* ================== Section Seller ==================== */
+.seller {
+    padding-top: 0;
+    background: url(../img/privacy_seller/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* ================== End Section Seller ==================== */
+
+/* ================== Section Relative ==================== */
+.relative {
+    padding: 0 0 70px;
+    background: url(../img/relative/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.relative .title .title__txt {
+    color: #fff;
+}
+.relative .section__item .section__txt ul li {
+    list-style: none;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 0;
+}
+.relative .section__item .section__txt ul li:first-child {
+    margin-top: 0;
+}
+.relative .section__item .section__txt p {
+    margin-top:  0;
+}
+/* ================== End Section Relative ==================== */
+/* ================== Section Reason ==================== */
+.reason {
+    padding-top: 0;
+    background: url(../img/why.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
