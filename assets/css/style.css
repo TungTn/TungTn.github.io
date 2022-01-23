@@ -1,4 +1,54 @@
 /* ================== Common Section =================== */
+body {
+    position: relative;
+}
+header  {
+    height: 60px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: position 10s;
+    -ms-transition: position 10s;
+    -o-transition: position 10s;
+    transition: all 0.5s ease;
+}
+main {
+    position: relative;
+    top: 60px;
+}
+.sticky {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+}
+#backTop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1041;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background: url(../img/backtoTop.jpg) center no-repeat;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+}
+.showed {
+    display: block !important;
+}
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+}
 .section {
     position: relative;
     min-height: auto;
@@ -76,7 +126,23 @@
     list-style: disc;
     margin-left: 25px;
 }
+@media screen and (max-width: 767px) {
+    .section__item {
+        flex-direction: column;
+    }
+    .section__txt {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .section__img {
+        width: 100%;
+    }
+}
 /* ================== End Common Section =================== */
+
+
+
 /* ================== Section Slide ==================== */
 .section.slide {
     padding:  0;
@@ -107,6 +173,7 @@
     bottom: 10px;
     left: 50%;
     transform: translate(-50%, 0);
+    width: 100%;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: #ff845f;
@@ -120,16 +187,29 @@ button.owl-dot.active {
 button.owl-dot:focus {
     outline: none;
 }
+@media screen and (max-width: 1199px) {
+    .owl-txt {
+        font-weight: bold;
+        font-size: 7vw;
+        padding: 10px 30px;
+        width: calc(100% - 20%);
+    }
+}
 /* ================== End Section Slide ==================== */
+
+
+
 /* ================== Section Seller ==================== */
 .seller {
-    padding-top: 0;
+    padding: 0 0 70px;
     background: url(../img/privacy_seller/background.jpg) no-repeat;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 /* ================== End Section Seller ==================== */
+
+
 
 /* ================== Section Relative ==================== */
 .relative {
@@ -154,10 +234,328 @@ button.owl-dot:focus {
     margin-top:  0;
 }
 /* ================== End Section Relative ==================== */
+
+
+/* ================== Section Position ==================== */
+.position {
+    padding: 0 0 70px;
+    background: url(../img/position/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.position .section-bg-overlay.absolute.fill {
+    background-color: rgba(221, 169, 169, 0.349);
+}
+.position .section__wrap {
+    margin-bottom: 50px;
+}
+.position .title .title__txt {
+    color: rgb(95, 52, 52);
+}
+.position .section__item .section__txt ul li {
+    list-style: none;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 0;
+}
+.position .section__item .section__txt ul li:first-child {
+    margin-top: 0;
+}
+.position .section__item .section__txt span {
+    color: #000;
+}
+.position .section__item .section__txt p {
+    margin-top:  0;
+}
+/* ================== End Section Position ==================== */
+
+
+/* ================== Section Floor ==================== */
+.floor {
+    padding: 0 0 70px;
+}
+.floor .section-bg-overlay.absolute.fill {
+    background-color: rgba(52, 151, 95, 0.26)   
+}
+.floor .section__wrap {
+    width: 100%;
+}
+.floor .section__wrap .section__item {
+    width: 100%;
+}
+.floor .title .title__txt {
+    color: rgb(95, 52, 52);
+}
+.floor .section__item .section__txt {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.floor .section__item .section__txt ul li {
+    list-style: none;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 0;
+}
+.floor .section__item .section__txt ul li:first-child {
+    margin-top: 0;
+}
+.floor .section__item .section__txt span {
+    color: #000;
+}
+.floor .section__item .section__txt p {
+    margin-top:  0;
+}
+/* ================== End Section Floor ==================== */
+
+
+/* ================== Section Prod ==================== */
+.prod {
+    padding: 0 0 70px;
+}
+.prod .section-bg-overlay.absolute.fill {
+    background-color: rgb(20, 50, 74); 
+}
+.prod .section__wrap .section__item:first-child {
+    margin-bottom: 50px;
+}
+.prod .title .title__txt {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.prod .title .title__txt {
+    border-bottom: 3px solid #fff;
+}
+.prod .section__item .section__ttl {
+    color: #fff;
+    width: 40%;
+    margin-right: 30px;
+}
+.prod .section__item .section__img {
+    width: calc(100% - 40% - 30px);
+}
+.prod .section__item .section__txt {
+    width: 100%;    
+    margin-top: 30px;
+}
+.prod .section__item .section__txt ul li {
+    list-style: none;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 0;
+}
+.prod .section__item .section__txt ul li:first-child {
+    margin-top: 0;
+}
+.prod .section__item .section__txt span {
+    color: #fff;
+}
+.prod .section__item .section__txt p {
+    margin-top:  0;
+}
+@media screen and (max-width: 767px) {
+    .prod .section__item .section__ttl {
+        width: 100%;
+        margin-right: 0;
+    }
+    .prod .section__item .section__img {
+        width: 100%;
+    }
+}
+/* ================== End Section Prod ==================== */
+
+
+/* ================== Section Ultilies ==================== */
+.ultilies {
+    padding: 0 0 70px;
+}
+.ultilies .section-bg-overlay.absolute.fill {
+    background-color: rgb(252, 247, 247);
+}
+.ultilies .section__item {
+    flex-direction: column;
+}
+.ultilies .section__item .section__txt {
+    width: 100%;
+    margin-right: 0;
+}
+.ultilies .section__item .section__img {
+    width: 100%;
+    margin-top:  50px;
+}
+.ultilies .section__item .section__img .section__img--wrap {
+    display: flex;
+    flex-wrap: wrap;
+}   
+.ultilies .section__item .section__img .section__img--wrap .section__img--item {
+    width: 50%;
+    padding: 10px;
+}
+.ultilies .title .title__txt {
+    margin-bottom: 30px;
+}
+.ultilies .section__item .section__txt ul li:first-child {
+    margin-top: 0;
+}
+.ultilies .section__item .section__txt span {
+    color: #000;
+}
+.ultilies .section__item .section__txt p {
+    margin-top:  0;
+}
+/* ================== End Section Ultilies ==================== */
+
+
+/* ================== Section realImg ==================== */
+.realImg {
+    padding: 0 0 70px;
+    background: url(../img/privacy_seller/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.realImg .section__wrap {
+    display: block;
+    width: 100%;
+}
+.realImg .section__img { 
+    width: 100%;
+}
+.realImg .section__img--wrap.section__img--wrap100 {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.realImg .section__img--wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.realImg .section__img--wrap .section__img--item {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.realImg .section__img--wrap .section__img--item img {
+    max-width: 100%;
+    transition: all 1s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}       
+.realImg .section__img--wrap .section__img--item:hover img {
+    transform: scale(1.1);
+}
+.realImg .section__img--item:nth-child(odd) {
+    width: calc(50% - 10px);
+    margin: 0 5px 10px 0;
+}
+.realImg .section__img--item:nth-child(even) {
+    width: calc(50% - 10px);
+    margin: 0 0 10px 5px;
+}
+/* ================== End Section realImg ==================== */
+
+
+/* ================== Section Event ==================== */
+.event {
+    padding: 0 0 70px;
+}
+.event .section-bg-overlay.absolute.fill {
+    background-color: rgba(174, 176, 165, 0.3);
+}
+.event .section__item {
+    flex-direction: column;
+    position: relative;
+    width: calc(100% / 3 );
+}
+.event .section__item:hover a {
+    text-decoration: none;
+    color: #000;
+}
+.event .section__item:hover .section__img--date .badge--inner {
+    color: #fff;
+    background-color: #446084;
+    border: 2px solid #446084;
+    transform: all .3s ease-out;
+}
+.event .section__img {
+    width: 100%;
+}
+.event .section__img--date {
+    position: absolute;
+    top: 7%;
+    left: -1em;
+}
+.event .section__img--date .badge--inner {
+    color: #446084;
+    background-color: #fff;
+    border: 2px solid currentColor;
+    padding: 10px 8px;
+}
+.event .section__ttl h5 {
+    text-align: center;
+    padding-top: 10px;
+}
+.event .section__txt {
+    width: 100%;
+    text-align: center;
+}
+.is-divider {
+    height: 2px;
+    display: block;
+    background-color: rgba(0,0,0,0.1);
+    margin:.5em auto;
+    width: 100%;
+    max-width: 30px;
+}
+@media screen and (max-width: 767px) {
+    .event .section__item {
+        width: calc(100% / 2);
+    }
+}
+/* ================== End Section Event ==================== */
+
+
+
 /* ================== Section Reason ==================== */
 .reason {
     padding-top: 0;
-    background: url(../img/why.jpg) no-repeat;
+    background: url(../img/reason/reason.jpg) no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+}
+.reason .section-bg-overlay.absolute.fill {
+    background-color: rgba(233, 215, 215, 0.85);
+}
+.reason .section__item {
+    width: calc(100% / 3);
+    flex-direction: column;
+    padding: 0 15px 30px;
+}
+.reason .section__icon {
+    background: #e5c167;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 0 auto 1em;
+    width: 84px;
+}
+.reason .section__icon img {
+    width: 100%;
+}
+.reason .section__ttl {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.reason .section__ttl h3 {
+    font-size: 24px;
+}
+.reason .section__txt {
+    width: 100%;
+    text-align: justify;
+}
+@media screen and (max-width: 767px) {
+    .reason .section__item {
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 479px) {
+    .reason .section__item {
+        width: 100%
+    }
 }

@@ -22,7 +22,8 @@
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<div id="top"></div>
+	<header class="sticky">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="#">Hub Mê Linh</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-Hub" aria-controls="navbar-Hub" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +33,34 @@
 			<div class="collapse navbar-collapse" id="navbar-Hub">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#seller">seller</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
+						<a class="nav-link" href="#relative">relative</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#position">position</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#floor">floor</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#prod">prod</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#ultilies">ultilies</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#realImg">realImg</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#event">event</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#reason">reason</a>
 					</li>
 				</ul>
 			</div>
@@ -79,6 +101,7 @@
 				</div>
 			</div>
 		</section>
+		<div id="seller"></div>
 		<section class="section seller">
 			<div class="container">
 				<div class="seller__ttl title">
@@ -108,6 +131,7 @@
 				</div>
 			</div>			
 		</section>
+		<div id="relative"></div>
 		<section class="section relative">
 			<div class="section-bg-overlay absolute fill"></div>
 			<div class="container">
@@ -136,6 +160,7 @@
 				</div>
 			</div>			
 		</section>
+		<div id="position"></div>
 		<section class="section position">
 			<div class="section-bg-overlay absolute fill"></div>
 			<div class="container">
@@ -155,7 +180,7 @@
 							</ul>
 						</div>
 						<div class="section__img section__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.993816820353!2d105.72050211544149!3d21.192404585909976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134ff7e525f31d5%3A0xc930003af2db17f9!2sHUD%20M%C3%8A%20LINH%20CENTRAL!5e0!3m2!1svi!2s!4v1642344807131!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.993816820353!2d105.72050211544149!3d21.192404585909976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134ff7e525f31d5%3A0xc930003af2db17f9!2sHUD%20M%C3%8A%20LINH%20CENTRAL!5e0!3m2!1svi!2s!4v1642344807131!5m2!1svi!2s" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 					</div>
 				</div>
@@ -164,6 +189,7 @@
 				</div>
 			</div>			
 		</section>
+		<div id="floor"></div>
 		<section class="section floor">
 			<div class="section-bg-overlay absolute fill"></div>
 			<div class="container">
@@ -178,9 +204,6 @@
 								<li><span>Các dãy liền kề, biệt thự và chung cư được đặt tại các vị trí phù hơp với công năng và mục đích sử dụng.</span></li>
 							</ul>
 						</div>
-						<div class="section__img section__map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.993816820353!2d105.72050211544149!3d21.192404585909976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3134ff7e525f31d5%3A0xc930003af2db17f9!2sHUD%20M%C3%8A%20LINH%20CENTRAL!5e0!3m2!1svi!2s!4v1642344807131!5m2!1svi!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-						</div>
 					</div>
 				</div>
 				<div class="section__mapfull">
@@ -188,6 +211,7 @@
 				</div>
 			</div>			
 		</section>
+		<div id="prod"></div>
 		<section class="section prod">
 			<div class="section-bg-overlay absolute fill"></div>
 			<div class="container">
@@ -197,32 +221,32 @@
 				<div class="section__wrap">
 					<div class="section__item">
 						<div class="section__ttl">
-							<p>LIỀN KỀ HUD MÊ LINH</p>
-						</div>
-						<div class="section__txt">
-							<ul>
-								<li><span><b>Liền kề Hud Mê Linh</b> với diện tích vừa phải, tổng giá nhỏ là sản phẩm thấp tầng được nhiều khách hàng quan tâm nhất dự án.</span></li>
-								<li><span>Các lô liền kề tại đây có diện tích phổ biến dao động từ 80-100m2, mặt tiền rộng 5.5-6m, sâu 16 đến 20m.</span></li>
-								<li><span>Mật độ xây dựng: đang cập nhật</span></li>
-								<li><span>Số tầng: 4 tầng 1 tum.</span></li>
-							</ul>
-						</div>
+							<h2>LIỀN KỀ HUD MÊ LINH</h2>
+							<div class="section__txt">
+								<ul>
+									<li><span><b>Liền kề Hud Mê Linh</b> với diện tích vừa phải, tổng giá nhỏ là sản phẩm thấp tầng được nhiều khách hàng quan tâm nhất dự án.</span></li>
+									<li><span>Các lô liền kề tại đây có diện tích phổ biến dao động từ 80-100m2, mặt tiền rộng 5.5-6m, sâu 16 đến 20m.</span></li>
+									<li><span>Mật độ xây dựng: đang cập nhật</span></li>
+									<li><span>Số tầng: 4 tầng 1 tum.</span></li>
+								</ul>
+							</div>
+						</div>						
 						<div class="section__img">
 							<img src="assets/img/prod/item-01.jpg" class="img-responsive">
 						</div>
 					</div>
 					<div class="section__item">
 						<div class="section__ttl">
-							<p>BIỆT THỰ HUD MÊ LINH CENTRAL</p>
-						</div>
-						<div class="section__txt">
-							<ul>
-								<li><span><b>Biệt thự Hud Mê Linh</b> là sản phẩm thấp tầng có diện tích lớn nhất. Đây là sản phẩm ưa thích của các khách hàng VIP có tiềm lực tài chính lớn hoặc ác nhà đầu tư dài hạn. Khách hàng có thể mua để ở hoặc đầu tư trung và dài hạn rất tốt.</span></li>
-								<li><span>Các lô biệt thự có diện tích từ 200-300m2, mặt tiền rộng 10-15m, sâu 15 đến 20m.</span></li>
-								<li><span>Mật độ xây dựng: đang cập nhật</span></li>
-								<li><span>Số tầng: 3 tầng.</span></li>
-							</ul>
-						</div>
+							<h2>BIỆT THỰ HUD MÊ LINH CENTRAL</h2>
+							<div class="section__txt">
+								<ul>
+									<li><span><b>Biệt thự Hud Mê Linh</b> là sản phẩm thấp tầng có diện tích lớn nhất. Đây là sản phẩm ưa thích của các khách hàng VIP có tiềm lực tài chính lớn hoặc ác nhà đầu tư dài hạn. Khách hàng có thể mua để ở hoặc đầu tư trung và dài hạn rất tốt.</span></li>
+									<li><span>Các lô biệt thự có diện tích từ 200-300m2, mặt tiền rộng 10-15m, sâu 15 đến 20m.</span></li>
+									<li><span>Mật độ xây dựng: đang cập nhật</span></li>
+									<li><span>Số tầng: 3 tầng.</span></li>
+								</ul>
+							</div>
+						</div>						
 						<div class="section__img">
 							<img src="assets/img/prod/item-01.jpg" class="img-responsive">
 						</div>
@@ -230,6 +254,7 @@
 				</div>
 			</div>			
 		</section>
+		<div id="ultilies"></div>
 		<section class="section ultilies">
 			<div class="section-bg-overlay absolute fill"></div>
 			<div class="container">
@@ -264,20 +289,14 @@
 				</div>
 			</div>			
 		</section>
+		<div id="realImg"></div>
 		<section class="section realImg">
-			<div class="section-bg-overlay absolute fill"></div>
 			<div class="container">
 				<div class="realImg__ttl title">
 					<p class="title__txt">HÌNH ẢNH THỰC TẾ TẠI DỰ ÁN HUD MÊ LINH CENTRAL</p>
 				</div>
 				<div class="section__wrap">
 					<div class="section__item">
-						<div class="section__txt">
-							<ul>
-								<li><span><b>Dự án Hud Mê Linh Central</b> được chủ đầu tư tích hợp rất nhiều các tiện ích nổi bật phục vụ đời sống của cư dân</b> được phân chia mặt bằng 1 cách rất bài bản và khoa học.</span></li>
-								<li><span>Sau khi hoàn thiện, khu đô thị <b>Thanh Lâm Đại Thịnh 2</b> sẽ kiến tạo nên 1 chốn an cư lý tưởng, đồng bộ, hiện đại, tiện nghi.</span></li>
-							</ul>
-						</div>
 						<div class="section__img">
 							<div class="section__img--wrap section__img--wrap100">
 								<img src="assets/img/real_image/z3055282602680_3b5e4167656caeab7e6118ed42d3d1eb.jpg" class="img-responsive">
@@ -301,14 +320,114 @@
 				</div>
 			</div>			
 		</section>
+		<div id="event"></div>
+		<section class="section event">
+			<div class="section-bg-overlay absolute fill"></div>
+			<div class="container">
+				<div class="event__ttl title">
+					<p class="title__txt">THÔNG TIN - SỰ KIỆN</p>
+				</div>
+				<div class="section__wrap">
+					<div class="section__item">
+						<a href="#">
+							<div class="section__img">
+								<div class="section__img--wrap">
+									<img src="assets/img/event/du-an-him-lam-van-phuc-ha-dong-300x200.jpg" class="img-responsive">
+									<div class="section__img--date badge">
+										<div class="badge--inner">
+											<span class="badge--day">16</span>
+											<br/>
+											<span class="badge--month">Th11</span>
+										</div>
+									</div>
+								</div>							
+							</div>
+							<div class="section__ttl">
+								<h5>HÀ NỘI: GIAO DỊCH PHÂN KHÚC THẤP TẦNG TĂNG ĐỘT BIẾN</h5>
+							</div>
+							<div class="is-divider"></div>
+							<div class="section__txt">
+								<span>Theo báo cáo thị trường Bất Động Sản Hà Nội quý 1/2021 của Savills. Phân [...]</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<div id="reason"></div>
 		<section class="section reason">
-			<div class="reason__ttl title">
-				<p class="title__txt">VÌ SAO NÊN CHỌN MUA HUD MÊ LINH CENTRAL</p>
-			</div>
-			<div class="reason__wrap">
-				<div class="reason__item">
-					<div class="reason__icon"></div>
-					<div class="reason__txt"></div>
+			<div class="section-bg-overlay absolute fill"></div>
+			<div class="container">
+				<div class="reason__ttl title">
+					<p class="title__txt">VÌ SAO NÊN CHỌN MUA HUD MÊ LINH CENTRAL</p>
+				</div>
+				<div class="section__wrap">
+					<div class="section__item">
+						<div class="section__icon">
+							<img src="assets/img/reason/fame.png" alt="">
+						</div>
+						<div class="section__ttl">
+							<h3>Bảng giá đợt 1</h3>
+						</div>
+						<div class="section__txt">
+							<span>Khách hàng quan tâm mua biệt thự, liền kề nên chọn mua sản phẩm ở thời điểm ra hàng đợt 1. Bảng hàng đợt đầu luôn có giá bán tốt nhất cũng như có nhiều lựa chọn các lô có vị trí đẹp. Qua đó đem tới cơ hội gia tăng về giá tốt cho các nhà đầu tư.</span>
+						</div>
+					</div>
+					<div class="section__item">
+						<div class="section__icon">
+							<img src="assets/img/reason/money.png" alt="">
+						</div>
+						<div class="section__ttl">
+							<h3>Giá trị sinh lời bền vững</h3>
+						</div>
+						<div class="section__txt">
+							<span>Bất động sản luôn là kênh đầu tư an toàn, ổn định và có lợi nhuận lớn nhất trong các lĩnh vực đầu tư.<br/>Nguồn cung BĐS ngày càng khan hiếm, số lượng các Dự án có chất lượng tốt, tiến độ thi công đảm bảo, pháp lý rõ ràng đang ngày càng sụt giảm</span>
+						</div>
+					</div>
+					<div class="section__item">
+						<div class="section__icon">
+							<img src="assets/img/reason/promotion.png" alt="">
+						</div>
+						<div class="section__ttl">
+							<h3>Pháp lý minh bạch</h3>
+						</div>
+						<div class="section__txt">
+							<span>Dự án hiện đã đầy đủ toàn bộ pháp lý, làm hoàn thiện hạ tầng và đủ điều kiện mở bán ra thị trường. Khách hàng khi sở hữu các lô biệt thự, liền kề ở thời điểm hiện tại hoàn toàn có thể yên tâm về pháp lý  và tiềm lực vững mạnh của Chủ Đầu Tư.</span>
+						</div>
+					</div>
+					<div class="section__item">
+						<div class="section__icon">
+							<img src="assets/img/reason/temple.png" alt="">
+						</div>
+						<div class="section__ttl">
+							<h3>HUD có giá cạnh tranh</h3>
+						</div>
+						<div class="section__txt">
+							<span>So với các quận, huyện khác, Mê Linh đang là khu vực có giá đất rất thấp. Đất Mê Linh đang có giá chỉ bằng 1/2, 1/3 so với Đông Anh.  Đây được coi là vùng trũng của bất động sản thủ đô. Do đó đất Mê Linh còn rất nhiều dư địa tăng giá cho các nhà đầu tư nhanh nhạy.</span>
+						</div>
+					</div>
+					<div class="section__item">
+						<div class="section__icon">
+							<img src="assets/img/reason/pier.png" alt="">
+						</div>
+						<div class="section__ttl">
+							<h3>Giá trị sinh lời bền vững</h3>
+						</div>
+						<div class="section__txt">
+							<span>Bất động sản luôn là kênh đầu tư an toàn, ổn định và có lợi nhuận lớn nhất trong các lĩnh vực đầu tư.<br/>Nguồn cung BĐS ngày càng khan hiếm, số lượng các Dự án có chất lượng tốt, tiến độ thi công đảm bảo, pháp lý rõ ràng đang ngày càng sụt giảm</span>
+						</div>
+					</div>
+					<div class="section__item">
+						<div class="section__icon">
+							<img src="assets/img/reason/marketing-1.png" alt="">
+						</div>
+						<div class="section__ttl">
+							<h3>Vị trí đắc địa, trung tâm </h3>
+						</div>
+						<div class="section__txt">
+							<span>Dự án sở hữu vị trí vô cùng thuận lợi tại trung tâm huyện. Đây được đánh giá là dự án có vị trí đẹp, giao thông thuận lợi hàng đầu khu vực. Với hạ tầng đồng bộ cư dân có thể dễ dàng di chuyển tới nội thành cũng như các khu vực lân cận</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -316,9 +435,11 @@
 	<footer>
 		
 	</footer>
+	<p><a href="#top" id="backTop" class="backTop"></a></p>
 </body>
 	<script src="assets/lib/js/jquery.min.js"></script>
 	<script src="assets/lib/js/bootstrap.min.js"></script>
 	<script src="assets/lib/js/owl.carousel.min.js"></script>
+	<script src="assets/lib/js/matchHeight.js"></script>
 	<script src="assets/js/main.js"></script>
 </html>
