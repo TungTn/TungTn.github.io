@@ -1,10 +1,16 @@
 $(document).ready(function(){
     /* Carousel */
-        $('.owl-carousel').owlCarousel({
-            loop:true,
-            items: 1,
-            nav: false,
-            dot: true
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                loop: true,
+                autoplay : true,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+                dynamicBullets: true,
+            },
         });
     /* End Carousel */
 

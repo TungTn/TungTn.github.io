@@ -15,10 +15,11 @@
 	<link rel="shortcut icon" href="" />
 	<!-- Library css -->
 	<link href="assets/lib/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/lib/css/owl.carousel.min.css" rel="stylesheet">
-	<link href="assets/lib/css/owl.theme.default.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Only css -->
-	<link href="assets/css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quintessential&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="assets/css/main.css" rel="stylesheet"> 
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -66,40 +67,48 @@
 			</div>
 		</nav>
 	</header>
-	<main>
+	<main> 
 		<section class="section slide">
-			<div class="owl-carousel owl-theme">
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item00.jpg" alt="">
-					<div class="owl-txt">
-						LIỀN KỀ DỰ ÁN HUD MÊ LINH GIÁ CHỈ 30TR/M2
-					</div>
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item01.jpg" alt="">
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item02.jpg" alt="">
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item03.jpg" alt="">
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item04.jpg" alt="">
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item05.jpg" alt="">
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item06.jpg" alt="">
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item07.jpg" alt="">
-				</div>
-				<div class="owl-wrap">
-					<img src="assets/img/slider/item08.jpg" alt="">
-				</div>
-			</div>
+			<div class="swiper mySwiper">
+	      		<div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<img src="assets/img/slider/banner.jpg" alt="">
+			        	<div class="swiper-form">
+			        		<form class="form" id="form-contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfdo4qplsbQdHtkv09y2PYJfWVf9wxQEG6TGU86xfUJHzazew/formResponse">	
+			        			<div class="form__txt">
+			        				<h2>HUD MÊ LINH CENTRAL <br/> Đăng ký nhận bảng giá gốc</h2>
+			        			</div>		        				
+			        			<div class="form__info">
+			        				<div class="form__info--div">
+				        				<label>Email</label>
+								        <input name="emailAddress" type="email" required/>
+							        </div>
+							        <div class="form__info--div">
+								        <label>Họ Tên</label>
+								        <input name="entry.568745785" type="text" required />
+							        </div>
+							        <div class="form__info--div">
+								        <label>Số Điện Thoại</label>
+								        <input name="entry.120812008" type="tel" required />
+							        </div>
+							        <div class="form__info--div">
+								        <label>Tin Nhắn</label>
+								        <textarea name="entry.1319446477" rows="5" cols="5"></textarea>
+							        </div>
+							        <button type="submit" value="Gui" target="_blank" id="btn-send" />
+							        	<span>Đăng ký</span>
+							        	<img src="assets/img/btn.png" alt="">
+							        </button>
+			        			</div>					          	
+				    		</form>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="assets/img/slider/banner2.jpg" alt="">
+			        </div>
+      			</div>
+	      		<div class="swiper-pagination"></div>
+		    </div>
 		</section>
 		<div id="seller"></div>
 		<section class="section seller">
@@ -439,7 +448,11 @@
 </body>
 	<script src="assets/lib/js/jquery.min.js"></script>
 	<script src="assets/lib/js/bootstrap.min.js"></script>
-	<script src="assets/lib/js/owl.carousel.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="assets/lib/js/matchHeight.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		OS.init();
+	</script>
 </html>
