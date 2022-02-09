@@ -1,14 +1,14 @@
 $(document).ready(function(){
     /* Carousel */
         var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay : false,
+            effect: 'fadeOut',
+            fadeEffect: {
+                crossFade: true
+            },
             pagination: {
-                el: ".swiper-pagination",
-                loop: true,
-                autoplay : true,
-                effect: 'fade',
-                fadeEffect: {
-                    crossFade: true
-                },
+                el: ".swiper-pagination",                
                 dynamicBullets: true,
             },
         });
@@ -21,14 +21,14 @@ $(document).ready(function(){
         $('.navbar-nav>li>a').on('click', function(){
             $('.navbar-collapse').collapse('hide');
         });     
-        $('.navbar-nav li a').click(function(e) {
+        $('.navbar-nav li a.nav-item').click(function(e) {
             $('.navbar-nav li.active').removeClass('active');
 
             var $parent = $(this).parent();
             $parent.addClass('active');
             e.preventDefault();
         });   
-        $("a[href^='#']:not([href$='#'])").on('click', function(e) {
+        $("a.nav-link").on('click', function(e) {
             e.preventDefault();
             var target = $(this).attr('href');
             var pos = 0;
@@ -54,19 +54,18 @@ $(document).ready(function(){
                 };
                 backToTop();
                 $(window).on('scroll', function () {
-                    console.log(1)
                     backToTop();
                 });
-                // $('#backTop').on('click', function (e) {
-                //     console.log(2)
-                //     e.preventDefault();
-                //     $('html,body').animate({
-                //     scrollTop: 0
-                //     }, 700);
-                // });
         }       
 });
 $(window).scroll(function() {
-    var sticky = $('header'),
-    scroll = $(window).scrollTop();
+    var sticky = $('header').outerHeight()
+    scroll = $(window).scrollTop()
+    if ( $(window).scrollTop() > sticky) {
+        $('.sticky').addClass('bg-black')
+        $('ul.navbar-nav.mr-auto li a').addClass('text-white')
+    } else {
+        $('.sticky').removeClass('bg-black')
+        $('ul.navbar-nav.mr-auto li a').removeClass('text-white')
+    }
 });
