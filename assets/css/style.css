@@ -170,6 +170,9 @@ h2 {
 
 
 /* ================== Nav ==================== */
+nav.navbar.navbar-expand-lg.navbar-light {
+    width: 100%;
+}
 ul.navbar-nav.mr-auto {
     align-items: center;
     justify-content: space-between;
@@ -228,6 +231,10 @@ ul.navbar-nav.mr-auto li a.phone:hover span {
 .bg-black {
     z-index: 3;
     background: linear-gradient(178.03deg, #222539 34.67%, #375178 133.01%);
+        height: 80px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .text-white {
     color: #fff;
