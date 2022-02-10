@@ -56,7 +56,16 @@ $(document).ready(function(){
                 $(window).on('scroll', function () {
                     backToTop();
                 });
-        }       
+        }  
+        var sticky = $('header').outerHeight()
+        scroll = $(window).scrollTop()
+        if ( $(window).scrollTop() > sticky) {
+            $('.sticky').addClass('bg-black')
+            $('ul.navbar-nav.mr-auto li a').addClass('text-white')
+        } else {
+            $('.sticky').removeClass('bg-black')
+            $('ul.navbar-nav.mr-auto li a').removeClass('text-white')
+        }     
 });
 $(window).scroll(function() {
     var sticky = $('header').outerHeight()
