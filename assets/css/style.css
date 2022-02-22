@@ -110,7 +110,7 @@ h2 {
     margin-bottom: -13px;
 }
 .title .title__txt span {
-    font-family: "Quintessential";
+    font-family: "Roboto";
     font-size: 50px;
     line-height: 50px;
 }
@@ -152,6 +152,21 @@ h2 {
 .section__item .section__txt ul li {
     list-style: disc;
     margin-left: 25px;
+}
+@media screen and (max-width: 991px) { 
+    .decor {
+        display: none;
+    }    
+    .title .title__txt {
+        padding: 0 0 10px;
+    }
+    .title .title__txt b {
+        font-size: 45px;
+    }
+    .title .title__txt span {
+        font-size: 40px;
+        line-height: 1.2;
+    }
 }
 @media screen and (max-width: 767px) {
     .section__item {
@@ -529,6 +544,15 @@ ul.navbar-nav.mr-auto li a.phone:hover span {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+@media screen and (max-width: 991px) {
+    .prod .section__wrap .section__item:nth-child(2) {
+        flex-direction: column;
+    }
+    .prod .section__wrap .section__item:nth-child(2) .section__ttl {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 @media screen and (max-width: 767px) {
     .prod .section__item .section__ttl {
         width: 100%;
@@ -539,32 +563,6 @@ ul.navbar-nav.mr-auto li a.phone:hover span {
     }
 }
 /* ================== End Section Prod ==================== */
-
-
-/* ======================== Section Contact ===================== */
-
-.contact .title .title__txt span {
-    color: #2e2e2e;
-}
-.contact .section__img {
-    width: 61%;
-}
-.contact .swiper-form {
-    position: relative;
-    margin-top: 0;
-    width: 39%;
-    right: 0;
-    height: auto;
-}
-.decor-contact-left {
-    left: 0;
-    top: 0;
-}
-.decor-contact-right {
-    right: 0;
-    top: 0;
-}
-/* ======================== End Section Contact ===================== */
 
 
 /* ======================== Form contact ===================== */
@@ -698,3 +696,79 @@ form#form-contact div {
     transform: scale(1);
     transition: all ease 0.3s;
 }
+
+@media screen and (max-width: 991px) {
+    .swiper-form {
+        display: none
+    }
+}
+/* ======================== Section Contact ===================== */
+
+.contact .title .title__txt span {
+    color: #2e2e2e;
+}
+.contact .section__img {
+    width: 61%;
+}
+.contact .swiper-form {
+    position: relative;
+    margin-top: 0;
+    width: 39%;
+    right: 0;
+    height: auto;
+}
+.decor-contact-left {
+    left: 0;
+    top: 0;
+}
+.decor-contact-right {
+    right: 0;
+    top: 0;
+}
+@media screen and (max-width: 991px) {
+    .contact .section__img {
+        width: 100%;
+    }
+    .contact .swiper-form {
+        width: 100%;
+        display: block;
+    }
+}
+/* ======================== End Section Contact ===================== */
+
+
+
+/* ======================== Footer ===================== */
+footer {
+    padding: 50px 0 0;
+}
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+footer p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+footer .footer-info {
+    display: flex;
+    padding-bottom: 30px;
+}
+footer .copyright {
+    margin-bottom: 0;
+    background: #335172;
+    padding: 15px 0;
+    color: #fff;
+}
+@media screen and (max-width: 991px) {
+    footer .footer-info {
+        flex-direction: column;
+    }
+    .footer-info .col-sm-12 {
+        margin-bottom: 30px;
+    }
+}
+
+
+
