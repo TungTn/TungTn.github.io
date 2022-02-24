@@ -65,7 +65,10 @@ $(document).ready(function(){
         } else {
             $('.sticky').removeClass('bg-black')
             $('ul.navbar-nav.mr-auto li a').removeClass('text-white')
-        }     
+        }  
+        if ( $(window).width() < 768) {
+            $('header').removeClass('sticky')
+        }   
 });
 $(window).scroll(function() {
     var sticky = $('header').outerHeight()

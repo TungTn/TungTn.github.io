@@ -187,7 +187,7 @@ h2 {
 /* ================== Nav ==================== */
 nav.navbar.navbar-expand-lg.navbar-light {
     width: 100%;
-    height: 75px;
+    align-items: flex-start;
 }
 ul.navbar-nav.mr-auto {
     align-items: center;
@@ -250,13 +250,41 @@ ul.navbar-nav.mr-auto li a.phone:hover span {
 .bg-black {
     z-index: 3;
     background: linear-gradient(178.03deg, #222539 34.67%, #375178 133.01%);
-        height: 80px;
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
 }
+.bg-black nav.navbar.navbar-expand-lg.navbar-light {
+    align-items: center;
+}
 .text-white {
     color: #fff;
+}
+@media screen and (max-width: 1500px) {
+    li.nav-item {
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 479px) {
+    nav.navbar.navbar-expand-lg.navbar-light a.navbar-brand img {
+        width: 50%;
+    }
+    ul.navbar-nav.mr-auto li a {
+        color: #000 !important;
+        padding: 10px 0;
+    }
+    ul.navbar-nav.mr-auto li a.active {
+        padding: 0;
+    }
+    ul.navbar-nav.mr-auto {
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px 15px 15px 0;
+    }
+    li.nav-item {
+        padding: 0;
+    }
 }
 /* ================== End Nav =================== */
 
@@ -331,6 +359,12 @@ ul.navbar-nav.mr-auto li a.phone:hover span {
     transform: translate(-50%, -50%);
     transition: 0.4s;
     z-index: -1;
+}
+@media screen and (max-width: 767px) {
+    .swiper-slide img {
+        height: 500px;
+        object-fit: cover;
+    }
 }
 /* ================== End Section Slide ==================== */
 
