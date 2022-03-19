@@ -1300,3 +1300,21 @@ div#phonering-alo-phoneIcon {
     background: url(../img/icon/icon-zalo.svg) no-repeat center center;
     background-size: 100%;
 }
+@media screen and (max-width: 767px) {
+    .sticky-container {
+        right: 15px;
+        bottom: 75px;
+    }
+    .icon-fix-right a {
+        width: 50px;
+        height: 50px;
+    }
+    .icon-fix-right .icon-cm {
+        width: 50px;
+        height: 50px;
+    }
+    div#phonering-alo-phoneIcon {
+        left: -25px;
+        bottom: 175px;
+    }
+}
