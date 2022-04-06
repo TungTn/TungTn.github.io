@@ -121,6 +121,17 @@ h2 {
 .section__item {
     display: flex;
 }
+.section__item.section__map--sub {
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.section__item.section__map--sub img {
+    width: 100%;
+}
+.section__item.section__map--sub img:last-child {
+    margin-top: 30px;
+}
 .section__txt {
     width: 45%;
     margin-right: 25px;
