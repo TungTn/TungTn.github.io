@@ -603,12 +603,12 @@ ul.navbar-nav.mr-auto li a.phone:hover span {
 
 
 /* ======================== Form contact ===================== */
-#form-contact {
+.form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-form#form-contact div {
+form.form div {
     display: flex;
     flex-direction: column;
 }
